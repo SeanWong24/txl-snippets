@@ -1,0 +1,242 @@
+{
+    "include": {
+        "prefix": "include",
+        "scope": "txl",
+        "body": [
+            "include \"${1:fileName}\""
+        ]
+    },
+    "define": {
+        "prefix": "define",
+        "scope": "txl",
+        "body": [
+            "define ${1:name}",
+            "\t$0",
+            "end define"
+        ]
+    },
+    "redefine": {
+        "prefix": "redefine",
+        "scope": "txl",
+        "body": [
+            "redefine ${1:name}",
+            "\t$0",
+            "end redefine"
+        ]
+    },
+    "rule": {
+        "prefix": "rule",
+        "scope": "txl",
+        "body": [
+            "rule ${1:name}",
+            "\t$0",
+            "end rule"
+        ]
+    },
+    "main_rule": {
+        "prefix": "rule main",
+        "scope": "txl",
+        "body": [
+            "rule main",
+            "\treplace [${1:type}]",
+            "\t\t$0",
+            "\tby",
+            "\t\t",
+            "end rule"
+        ]
+    },
+    "function": {
+        "prefix": "function",
+        "scope": "txl",
+        "body": [
+            "function ${1:name}",
+            "\t$0",
+            "end function"
+        ]
+    },
+    "keys": {
+        "prefix": "keys",
+        "scope": "txl",
+        "body": [
+            "keys ${1:name}",
+            "\t$0",
+            "end keys"
+        ]
+    },
+    "compounds": {
+        "prefix": "compounds",
+        "scope": "txl",
+        "body": [
+            "compounds ${1:name}",
+            "\t$0",
+            "end compounds"
+        ]
+    },
+    "comments": {
+        "prefix": "comments",
+        "scope": "txl",
+        "body": [
+            "comments ${1:name}",
+            "\t$0",
+            "end comments "
+        ]
+    },
+    "tokens": {
+        "prefix": "tokens",
+        "scope": "txl",
+        "body": [
+            "tokens ${1:name}",
+            "\t$0",
+            "end tokens "
+        ]
+    },
+    "replace": {
+        "prefix": "replace",
+        "scope": "txl",
+        "body": [
+            "replace [${1:type}]",
+            "\t$0"
+        ]
+    },
+    "replace_by": {
+        "prefix": "replace by",
+        "scope": "txl",
+        "body": [
+            "replace [${1:type}]",
+            "\t$0",
+            "by",
+            "\t"
+        ]
+    },
+    "construct": {
+        "prefix": "construct",
+        "scope": "txl",
+        "body": [
+            "construct ${1:name} [${2:type}]",
+            "\t$0"
+        ]
+    },
+    "deconstruct": {
+        "prefix": "deconstruct",
+        "scope": "txl",
+        "body": [
+            "deconstruct ${1:name}",
+            "\t$0"
+        ]
+    },
+    "export": {
+        "prefix": "export",
+        "scope": "txl",
+        "body": [
+            "export ${1:name}",
+            "\t$0"
+        ]
+    },
+    "export_with_type": {
+        "prefix": "export t",
+        "scope": "txl",
+        "body": [
+            "export ${1:name} [${2:type}]",
+            "\t$0"
+        ],
+        "description": "export with type"
+    },
+    "import": {
+        "prefix": "import",
+        "scope": "txl",
+        "body": [
+            "import ${1:name}",
+            "\t$0"
+        ]
+    },
+    "import_with_type": {
+        "prefix": "import t",
+        "scope": "txl",
+        "body": [
+            "import ${1:name} [${2:type}]",
+            "\t$0"
+        ],
+        "description": "import with type"
+    },
+    "where_equal": {
+        "prefix": "where ==",
+        "scope": "txl",
+        "body": [
+            "where",
+            "\t${1:variable1} [= ${0:variable2}]"
+        ],
+        "description": "where equal"
+    },
+    "where_not_equal": {
+        "prefix": "where !=",
+        "scope": "txl",
+        "body": [
+            "where not",
+            "\t${1:variable1} [= ${0:variable2}]"
+        ],
+        "description": "where not equal"
+    },
+    "opt": {
+        "prefix": "opt",
+        "scope": "txl",
+        "body": [
+            "[opt ${0:X}]"
+        ]
+    },
+    "repeat": {
+        "prefix": "repeat",
+        "scope": "txl",
+        "body": [
+            "[repeat ${0:X}]"
+        ]
+    },
+    "repeat+": {
+        "prefix": "repeat+",
+        "scope": "txl",
+        "body": [
+            "[repeat ${0:X}+]"
+        ]
+    },
+    "list": {
+        "prefix": "list",
+        "scope": "txl",
+        "body": [
+            "[list ${0:X}]"
+        ]
+    },
+    "list+": {
+        "prefix": "list+",
+        "scope": "txl",
+        "body": [
+            "[list ${0:X}+]"
+        ]
+    },
+    "see": {
+        "prefix": "see",
+        "scope": "txl",
+        "body": [
+            "[see ${0:X}]"
+        ]
+    },
+    "not": {
+        "prefix": "not",
+        "scope": "txl",
+        "body": [
+            "[not ${0:X}]"
+        ]
+    },
+    "push": {
+        "prefix": "push",
+        "scope": "txl",
+        "body": [
+            "[push ${0:X}]"
+        ]
+    },
+    "pop": {
+        "prefix": "pop",
+        "scope": "txl",
+        "body": [
+            "[pop ${0:X}]"
+        ]
+    }
+}

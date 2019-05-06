@@ -1,0 +1,1 @@
+Some snippets and shortcut to comment.

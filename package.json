@@ -1,0 +1,40 @@
+{
+    "name": "txl-snippets",
+    "displayName": "txl-snippets",
+    "description": "Some snippets and shortcut to comment.",
+    "publisher": "SeanWong24",
+    "version": "1.0.3",
+    "engines": {
+        "vscode": "^1.29.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SeanWong24/txl-snippets"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "txl",
+                "extensions": [
+                    ".txl",
+                    ".grm"
+                ],
+                "aliases": [
+                    "TXL",
+                    "Txl",
+                    "txl"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "txl",
+                "path": "./snippets/txl.json"
+            }
+        ]
+    }
+}
